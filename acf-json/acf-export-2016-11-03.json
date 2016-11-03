@@ -1,0 +1,277 @@
+[
+    {
+        "key": "group_5812208b7478e",
+        "title": "Carte",
+        "fields": [
+            {
+                "key": "field_581220d60d7b3",
+                "label": "Carte",
+                "name": "map",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "",
+                "center_lng": "",
+                "zoom": "",
+                "height": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "42"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5811c8f7ac4f2",
+        "title": "M\u00e9dias",
+        "fields": [
+            {
+                "key": "field_5811f0a5b786d",
+                "label": "M\u00e9dias",
+                "name": "medias",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Ajouter un \u00e9l\u00e9ment",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "5811f0b2d76f6",
+                        "name": "carousel",
+                        "label": "Carousel",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "key": "field_5811f0d0b786e",
+                                "label": "Photos",
+                                "name": "carousel_images",
+                                "type": "gallery",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "insert": "append",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5819bf4038449",
+                                "label": "Taille",
+                                "name": "carousel_size",
+                                "type": "radio",
+                                "instructions": "Taille du carousel.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "1920x180": "Petit",
+                                    "1920x480": "Moyen",
+                                    "1920x780": "Grand",
+                                    "1920x1080": "Plein \u00e9cran"
+                                },
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5819ab0fbe5cd",
+                                "label": "Titre",
+                                "name": "carousel_title",
+                                "type": "radio",
+                                "instructions": "Afficher les titres des images.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": [
+                                    "Non",
+                                    "Oui"
+                                ],
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5819aa9b968a8",
+                                "label": "L\u00e9gende",
+                                "name": "carousel_caption",
+                                "type": "radio",
+                                "instructions": "Afficher les l\u00e9gendes des images.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": [
+                                    "Non",
+                                    "Oui"
+                                ],
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5811f101b7870",
+                                "label": "Contr\u00f4le",
+                                "name": "carousel_controls",
+                                "type": "radio",
+                                "instructions": "Afficher les fl\u00e8ches de contr\u00f4les.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": [
+                                    "Non",
+                                    "Oui"
+                                ],
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5811f13fb7871",
+                                "label": "Indicateurs",
+                                "name": "carousel_indicators",
+                                "type": "radio",
+                                "instructions": "Afficher les indicateurs de position.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": [
+                                    "Non",
+                                    "Oui"
+                                ],
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            }
+                        ],
+                        "min": "0",
+                        "max": "1"
+                    },
+                    {
+                        "key": "5811f98e9bfbc",
+                        "name": "gallery",
+                        "label": "Galerie",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "key": "field_5811f98e9bfbd",
+                                "label": "Photos",
+                                "name": "gallery_images",
+                                "type": "gallery",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "min": "",
+                                "max": "",
+                                "insert": "append",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ],
+                        "min": "0",
+                        "max": "1"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
