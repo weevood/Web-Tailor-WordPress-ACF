@@ -1,11 +1,11 @@
 <?php
 
-define('C_MAIN_FIELD',  'medias');      // Name of main field
-define('C_FLEX_FIELD',  'carousel');    // Name of flex field
-define('C_INTERVAL',    10000);         // Delay between automatically cycling in ms
-define('C_PAUSE',       'hover');       // Pauses the cycling on mouse over ('hover') or not (NULL)
-define('C_WRAP',        TRUE);          // Cycle continuously ('true') or have hard stops ('false')
-define('C_KEYBOARD',    FALSE);         // React to keyboard events ('true') or not ('false')
+define('C_MAIN_FIELD',  'medias');      // (String)   Name of main field
+define('C_FLEX_FIELD',  'carousel');    // (String)   Name of flex field
+define('C_INTERVAL',    10000);         // (Number)   Delay between automatically cycling in ms
+define('C_PAUSE',       'hover');       // (String)   Pauses the cycling on mouse over ('hover') or not (NULL)
+define('C_WRAP',        TRUE);          // (Boolean)  Cycle continuously ('true') or have hard stops ('false')
+define('C_KEYBOARD',    FALSE);         // (Boolean)  React to keyboard events ('true') or not ('false')
 
 if( function_exists('get_sub_field') && have_rows(constant('C_MAIN_FIELD')) ):
   while( have_rows(constant('C_MAIN_FIELD')) ) : the_row();

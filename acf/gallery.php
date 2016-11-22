@@ -1,14 +1,14 @@
 <?php
 
-define('G_MAIN_FIELD',          'medias');            // Name of main field
-define('G_FLEX_FIELD',          'gallery');           // Name of flex field
-define('G_SHOW_NAV_TOUCH',      FALSE);               // Always show nav on touch devices
-define('G_SHOW_IMAGE_NUMBER',   TRUE);                // If false, the text below the caption will be hidden
-define('G_ALBUM_LABEL',         'Image %1 sur %2');   // The text displayed below the caption
-define('G_DISABLE_SCROLLING',   TRUE);                // If true, prevent the page from scrolling
-define('G_FADE_DURATION',       500);                 // The time for the Lightbox to show up in ms
-define('G_RESIZE_DURATION',     500);                 // The time for the container to animate transition in ms
-define('G_WRAP_AROUND',         FALSE);               // If true, when a user reaches the last image the set start again
+define('G_MAIN_FIELD',          'medias');            // (String)   Name of main field
+define('G_FLEX_FIELD',          'gallery');           // (String)   Name of flex field
+define('G_SHOW_NAV_TOUCH',      FALSE);               // (Boolean)  Always show nav on touch devices
+define('G_SHOW_IMAGE_NUMBER',   TRUE);                // (Boolean)  If false, the text below the caption will be hidden
+define('G_ALBUM_LABEL',         'Image %1 sur %2');   // (String)   The text displayed below the caption
+define('G_DISABLE_SCROLLING',   TRUE);                // (Boolean)  If true, prevent the page from scrolling
+define('G_FADE_DURATION',       500);                 // (Number)   The time for the Lightbox to show up in ms
+define('G_RESIZE_DURATION',     500);                 // (Number)   The time for the container to animate transition in ms
+define('G_WRAP_AROUND',         FALSE);               // (Boolean)  If true, when a user reaches the last image the set start again
 
 if( function_exists('get_sub_field') && have_rows(constant('G_MAIN_FIELD')) ):
   while( have_rows(constant('G_MAIN_FIELD')) ) : the_row();
