@@ -1,11 +1,11 @@
 {
     "key": "group_5811c8f7ac4f2",
-    "title": "M\u00e9dias",
+    "title": "Disposition",
     "fields": [
         {
             "key": "field_5811f0a5b786d",
-            "label": "M\u00e9dias",
-            "name": "medias",
+            "label": "Disposition",
+            "name": "layout",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -189,7 +189,7 @@
                             "type": "gallery",
                             "instructions": "",
                             "required": 1,
-                            "conditional_logic": 0,
+                            "conditional_logic": "",
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -198,7 +198,7 @@
                             "min": "",
                             "max": "",
                             "insert": "append",
-                            "library": "all",
+                            "library": "",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -376,6 +376,92 @@
                     ],
                     "min": "0",
                     "max": "1"
+                },
+                {
+                    "key": "583551cd52bc5",
+                    "name": "mosaic",
+                    "label": "Mosa\u00efque",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5835522952bcd",
+                            "label": "Articles",
+                            "name": "mosaic_articles",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [],
+                            "filters": [
+                                "search",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": 1,
+                            "max": 16,
+                            "return_format": "object"
+                        },
+                        {
+                            "key": "field_583559f76f8da",
+                            "label": "Date",
+                            "name": "mosaic_date",
+                            "type": "radio",
+                            "instructions": "Afficher les dates de publication des articles.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Non",
+                                "Oui"
+                            ],
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_583551cd52bcb",
+                            "label": "Titre",
+                            "name": "mosaic_title",
+                            "type": "radio",
+                            "instructions": "Afficher les titres des articles.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Non",
+                                "Oui"
+                            ],
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "0",
+                    "max": "1"
                 }
             ]
         }
@@ -397,5 +483,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1478271765
+    "modified": 1480086915
 }

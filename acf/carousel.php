@@ -1,6 +1,6 @@
 <?php
 
-define('C_MAIN_FIELD',  'medias');      // (String)   Name of main field
+define('C_MAIN_FIELD',  'layout');      // (String)   Name of main field
 define('C_FLEX_FIELD',  'carousel');    // (String)   Name of flex field
 define('C_INTERVAL',    10000);         // (Number)   Delay between automatically cycling in ms
 define('C_PAUSE',       'hover');       // (String)   Pauses the cycling on mouse over ('hover') or not (NULL)

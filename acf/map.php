@@ -8,10 +8,10 @@ define('M_SCROLLWHEEL',         TRUE);    // (Boolean)  False disables scrollwhe
 define('M_ZOOM',                14);      // (Number)   The initial Map zoom level
 
 if( function_exists('get_field') && $map = get_field(constant('M_MAIN_FIELD')) ):
-  $ID       = get_the_id();     // App\pre_print('$ID',$ID); 
-  $address  = $map['address'];  // App\pre_print('$addr',$addr); 
-  $lat      = $map['lat'];      // App\pre_print('$lat',$lat); 
-  $lng      = $map['lng'];      // App\pre_print('$lng',$lng); ?>
+  $ID       = get_the_id();     // App\pre_print('$ID', $ID); 
+  $address  = $map['address'];  // App\pre_print('$addr', $addr); 
+  $lat      = $map['lat'];      // App\pre_print('$lat', $lat); 
+  $lng      = $map['lng'];      // App\pre_print('$lng', $lng); ?>
 
   <div id="map-<?php echo $ID ?>" class="acf-map hidden-xs">
 		<div class="marker" data-lat="<?php echo $lat ?>" data-lng="<?php echo $lng ?>"></div>

@@ -1,6 +1,6 @@
 <?php
 
-define('G_MAIN_FIELD',          'medias');            // (String)   Name of main field
+define('G_MAIN_FIELD',          'layout');            // (String)   Name of main field
 define('G_FLEX_FIELD',          'gallery');           // (String)   Name of flex field
 define('G_SHOW_NAV_TOUCH',      FALSE);               // (Boolean)  Always show nav on touch devices
 define('G_SHOW_IMAGE_NUMBER',   TRUE);                // (Boolean)  If false, the text below the caption will be hidden
@@ -32,13 +32,13 @@ if( function_exists('get_sub_field') && have_rows(constant('G_MAIN_FIELD')) ):
         <div class="row">
           
           <?php foreach( $images as $i => $image ):
-                  $id       = $image['id'];                                  // App\pre_print('$id',$id);
-                  $title    = $image['title'];                               // App\pre_print('$title',$title);
-                  $caption  = $image['caption'];                             // App\pre_print('$caption',$caption);
-                  $full     = $image['sizes']['1920x1080'];                  // App\pre_print('$full',$full);                   
-                  $src      = $image['sizes'][$size];                        //  App\pre_print('$src',$src);
-                  $width    = $image['sizes'][$size.'-width'];               // App\pre_print('$width',$width);
-                  $height   = $image['sizes'][$size.'-height'];              // App\pre_print('$height',$height); 
+                  $id       = $image['id'];                                  // App\pre_print('$id', $id);
+                  $title    = $image['title'];                               // App\pre_print('$title', $title);
+                  $caption  = $image['caption'];                             // App\pre_print('$caption', $caption);
+                  $full     = $image['sizes']['1920x1080'];                  // App\pre_print('$full', $full);                   
+                  $src      = $image['sizes'][$size];                        //  App\pre_print('$src', $src);
+                  $width    = $image['sizes'][$size.'-width'];               // App\pre_print('$width', $width);
+                  $height   = $image['sizes'][$size.'-height'];              // App\pre_print('$height', $height); 
                   
                   if( ($show_title && $title) && ($show_caption && $caption) ): $data_title = $title.' - '.$caption;
                   elseif( $show_title && $title ): $data_title = $title;
