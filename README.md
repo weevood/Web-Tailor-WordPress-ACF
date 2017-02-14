@@ -6,6 +6,7 @@ A starter package of Advanced Custom Fields templates with Bootstrap 4.
 - Gallery
 - Google Map
 - Posts Mosaic
+- Masonry
 
 ## Use
 1. Synchronize the necessary fields from JSON (https://goo.gl/vtmBLR)

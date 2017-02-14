@@ -462,6 +462,129 @@
                     ],
                     "min": "0",
                     "max": "1"
+                },
+                {
+                    "key": "58a2d63956a62",
+                    "name": "masonry",
+                    "label": "Masonry",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_58a2d63956a63",
+                            "label": "Photos",
+                            "name": "masonry_images",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "min": "",
+                            "max": "",
+                            "insert": "append",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_58a2d63956a67",
+                            "label": "Lightbox",
+                            "name": "masonry_lightbox",
+                            "type": "radio",
+                            "instructions": "Afficher la lightbox.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Non",
+                                "Oui"
+                            ],
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_58a2d63956a68",
+                            "label": "Titre",
+                            "name": "masonry_title",
+                            "type": "radio",
+                            "instructions": "Afficher les titres des images.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_58a2d63956a67",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Non",
+                                "Oui"
+                            ],
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_58a2d63956a69",
+                            "label": "L\u00e9gende",
+                            "name": "masonry_caption",
+                            "type": "radio",
+                            "instructions": "Afficher les l\u00e9gendes des images.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_58a2d63956a67",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "Non",
+                                "Oui"
+                            ],
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "0",
+                    "max": "1"
                 }
             ]
         }
@@ -483,5 +606,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1480086915
+    "modified": 1487066788
 }
