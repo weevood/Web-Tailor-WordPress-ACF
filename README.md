@@ -21,5 +21,5 @@ A starter package of Advanced Custom Fields templates with Bootstrap 4.
 
 ### Use
 1. Include *acf.php* file from *options-page* folder in your *functions.php* file with `<?php require_once dirname(__FILE__) . '/acf.php'; ?>`
-2. Move *apache-auth.php* and *maintenance-mode.php* files from *mu-plugins* folder in your *mu-plugins* folder
-3. Move *maintenance.php* file from *options-page* folder in the root of your *wp-content* folder
+2. Move *apache-auth.php* and *maintenance-mode.php* files from *mu-plugins* folder in ***your*** *mu-plugins* folder
+3. Move *maintenance.php* file from *options-page* folder in the root of **your** *wp-content* folder
