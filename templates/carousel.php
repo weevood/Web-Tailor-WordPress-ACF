@@ -2,10 +2,10 @@
 
 define('CAROUSEL_MAIN_FIELD',  'layout');     // (String)   Name of main field
 define('CAROUSEL_FLEX_FIELD',  'carousel');   // (String)   Name of flex field
-define('CAROUSEL_INTERVAL',    10000);        // (Number)   Delay between automatically cycling in ms
-define('CAROUSEL_PAUSE',       'hover');      // (String)   Pauses the cycling on mouse over ('hover') or not (NULL)
-define('CAROUSEL_WRAP',        TRUE);         // (Boolean)  Cycle continuously ('true') or have hard stops ('false')
-define('CAROUSEL_KEYBOARD',    FALSE);        // (Boolean)  React to keyboard events ('true') or not ('false')
+define('CAROUSEL_INTERVAL',    ( get_field( 'carousel_interval', 'option' ) ?: 10000 ) );
+define('CAROUSEL_PAUSE',       ( get_field( 'carousel_pause', 'option' ) ? 'hover' : NULL ) );
+define('CAROUSEL_WRAP',        ( get_field( 'carousel_wrap', 'option' ) ?: TRUE ) );
+define('CAROUSEL_KEYBOARD',    ( get_field( 'carousel_keyboard', 'option' ) ?: FALSE ) );
 
 if( function_exists('get_sub_field') && have_rows(constant('CAROUSEL_MAIN_FIELD')) ):
   while( have_rows(constant('CAROUSEL_MAIN_FIELD')) ) : the_row();
@@ -18,10 +18,10 @@ if( function_exists('get_sub_field') && have_rows(constant('CAROUSEL_MAIN_FIELD'
       $show_controls      = get_sub_field(constant('CAROUSEL_FLEX_FIELD').'_controls');     // App\pre_print('$show_controls', $show_controls);
       $show_indicators    = get_sub_field(constant('CAROUSEL_FLEX_FIELD').'_indicators');   // App\pre_print('$show_indicators', $show_indicators); ?>
 
-      <div  id="carousel-<?php echo $ID ?>" 
-            class="carousel slide" 
-            data-ride="carousel" 
-            data-interval="<?php echo constant('CAROUSEL_INTERVAL'); ?>" 
+      <div  id="carousel-<?php echo $ID ?>"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="<?php echo constant('CAROUSEL_INTERVAL'); ?>"
             data-pause="<?php echo constant('CAROUSEL_PAUSE'); ?>"
             data-wrap="<?php echo constant('CAROUSEL_WRAP') ? 'true' : 'false'; ?>"
             data-keyboard="<?php echo constant('CAROUSEL_KEYBOARD') ? 'true' : 'false'; ?>">
@@ -37,10 +37,10 @@ if( function_exists('get_sub_field') && have_rows(constant('CAROUSEL_MAIN_FIELD'
                 $height     = $image['sizes'][$size.'-height'];               // App\pre_print('$height', $height); ?>
 
           <div id="<?php echo 'carousel-'.$ID.'-item-'.$i ?>" class="carousel-item<?php echo ($i == 0 ? ' active' : ''); ?>">
-            <img  src="<?php echo $src ?>" 
-                  srcset="<?php echo $srcset ?>" 
-                  alt="<?php echo $title ?>" 
-                  width="<?php echo $width ?>" 
+            <img  src="<?php echo $src ?>"
+                  srcset="<?php echo $srcset ?>"
+                  alt="<?php echo $title ?>"
+                  width="<?php echo $width ?>"
                   height="<?php echo $height ?>"/>
 
             <?php if( $show_title || $show_caption ): ?>
@@ -74,7 +74,7 @@ if( function_exists('get_sub_field') && have_rows(constant('CAROUSEL_MAIN_FIELD'
 
       </div><!-- /.carousel -->
 
-<?php 
+<?php
     endif;
   endwhile;
 else:

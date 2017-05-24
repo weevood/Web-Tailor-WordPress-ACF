@@ -6,26 +6,27 @@
             "key": "field_581220d60d7b3",
             "label": "Carte",
             "name": "map",
+            "prefix": "",
             "type": "google_map",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
                 "class": "",
-                "id": ""
+                "id": "",
+                "width": ""
             },
             "center_lat": "",
             "center_lng": "",
-            "zoom": "",
-            "height": ""
+            "height": "",
+            "zoom": ""
         }
     ],
     "location": [
         [
             {
-                "param": "page",
                 "operator": "==",
+                "param": "page",
                 "value": "42"
             }
         ]
@@ -38,5 +39,6 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487085609
+    "modified": 1495205141,
+    "local": "json"
 }

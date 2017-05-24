@@ -1,0 +1,102 @@
+{
+    "key": "group_591f203675af0",
+    "title": "Carousel Options",
+    "fields": [
+        {
+            "key": "field_591f203679766",
+            "label": "Interval",
+            "name": "carousel_interval",
+            "type": "number",
+            "instructions": "Delay between automatically cycling in ms.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 10000,
+            "placeholder": 10000,
+            "prepend": "",
+            "append": "ms",
+            "min": 1000,
+            "max": 1000000,
+            "step": 100
+        },
+        {
+            "key": "field_591f2280e96b0",
+            "label": "Pause on hover",
+            "name": "carousel_pause",
+            "type": "true_false",
+            "instructions": "Pauses the cycling on mouse over.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_591f22f4e96b1",
+            "label": "Cycle continuously",
+            "name": "carousel_wrap",
+            "type": "true_false",
+            "instructions": "Cycle continuously or have hard stops.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_591f2309e96b2",
+            "label": "React to keyboard",
+            "name": "carousel_keyboard",
+            "type": "true_false",
+            "instructions": "React to keyboard events or not.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1495437410
+}

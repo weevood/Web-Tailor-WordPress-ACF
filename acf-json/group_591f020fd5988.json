@@ -7,7 +7,7 @@
             "label": "Enabled",
             "name": "maintenance_mode_enabled",
             "type": "true_false",
-            "instructions": "Simply Enable \/ Disable maintenance mode.",
+            "instructions": "Enable \/ Disable maintenance mode.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -20,6 +20,83 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_592292c066856",
+            "label": "Title",
+            "name": "maintenance_mode_title",
+            "type": "text",
+            "instructions": "The title to display below the site icon.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591f054c5b719",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Maintenance mode - We’ll be back soon!",
+            "placeholder": "Maintenance mode - We’ll be back soon!",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5922932466857",
+            "label": "Text",
+            "name": "maintenance_mode_text",
+            "type": "text",
+            "instructions": "A little text to display below the site icon.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591f054c5b719",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sorry for the inconvenience but we’re performing some maintenance at the moment.",
+            "placeholder": "Sorry for the inconvenience but we’re performing some maintenance at the moment.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5922934f66858",
+            "label": "Background color",
+            "name": "maintenance_mode_background_color",
+            "type": "color_picker",
+            "instructions": "The main background color.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_591f054c5b719",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#3f7bad"
         }
     ],
     "location": [
@@ -27,7 +104,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-maintenance-mode"
+                "value": "acf-options-restricted-access"
             }
         ]
     ],
@@ -39,5 +116,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495205750
+    "modified": 1495440776
 }

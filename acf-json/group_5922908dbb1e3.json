@@ -1,0 +1,110 @@
+{
+    "key": "group_5922908dbb1e3",
+    "title": "Apache Authentification",
+    "fields": [
+        {
+            "key": "field_5922908dbe3c7",
+            "label": "Enabled",
+            "name": "apache_authentification_enabled",
+            "type": "true_false",
+            "instructions": "Enable \/ Disable the Apache authentification.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59229b9531986",
+            "label": "Users",
+            "name": "apache_authentification_users",
+            "type": "repeater",
+            "instructions": "The list of authorized users.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5922908dbe3c7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_59229be431987",
+            "min": 1,
+            "max": 5,
+            "layout": "table",
+            "button_label": "Add user",
+            "sub_fields": [
+                {
+                    "key": "field_59229be431987",
+                    "label": "Name",
+                    "name": "apache_authentification_users_name",
+                    "type": "text",
+                    "instructions": "Must not contain any special characters.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59229bff31988",
+                    "label": "Password",
+                    "name": "apache_authentification_users_password",
+                    "type": "password",
+                    "instructions": "Must not be encrypted.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-restricted-access"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1495531309
+}
