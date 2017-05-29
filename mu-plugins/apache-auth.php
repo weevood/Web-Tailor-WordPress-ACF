@@ -79,7 +79,7 @@ add_filter('mod_rewrite_rules', function( $rules ) {
 	$htpasswd = ABSPATH . '.htpasswd';
 	$enabled 	= 'apache_authentification_enabled';
 
-	if ( !get_field( $enabled, 'option' ) )
+	if ( !ws_get_field( $enabled, 'option' ) )
 		return $rules;
 
 	$content  = PHP_EOL;

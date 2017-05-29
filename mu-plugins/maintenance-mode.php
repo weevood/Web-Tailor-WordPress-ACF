@@ -10,8 +10,8 @@
 add_action( 'wp_loaded', function() {
 
 	global $pagenow;
-
-	if ( !get_field( 'maintenance_mode_ednabled', 'option' ) )
+	
+	if ( !ws_get_field( 'maintenance_mode_enabled', 'option' ) )
 		return;
 
 	if ( $pagenow !== 'wp-login.php' && !current_user_can( 'manage_options' ) && !is_admin() ) :

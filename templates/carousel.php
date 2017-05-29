@@ -2,10 +2,10 @@
 
 define('CAROUSEL_MAIN_FIELD',  'layout');     // (String)   Name of main field
 define('CAROUSEL_FLEX_FIELD',  'carousel');   // (String)   Name of flex field
-define('CAROUSEL_INTERVAL',    ( get_field( 'carousel_interval', 'option' ) ?: 10000 ) );
-define('CAROUSEL_PAUSE',       ( get_field( 'carousel_pause', 'option' ) ? 'hover' : NULL ) );
-define('CAROUSEL_WRAP',        ( get_field( 'carousel_wrap', 'option' ) ?: TRUE ) );
-define('CAROUSEL_KEYBOARD',    ( get_field( 'carousel_keyboard', 'option' ) ?: FALSE ) );
+define('CAROUSEL_INTERVAL',    ( ws_get_field( 'carousel_interval', 'option' ) ?: 10000 ) );
+define('CAROUSEL_PAUSE',       ( ws_get_field( 'carousel_pause', 'option' ) ? 'hover' : NULL ) );
+define('CAROUSEL_WRAP',        ( ws_get_field( 'carousel_wrap', 'option' ) ?: TRUE ) );
+define('CAROUSEL_KEYBOARD',    ( ws_get_field( 'carousel_keyboard', 'option' ) ?: FALSE ) );
 
 if( function_exists('get_sub_field') && have_rows(constant('CAROUSEL_MAIN_FIELD')) ):
   while( have_rows(constant('CAROUSEL_MAIN_FIELD')) ) : the_row();
